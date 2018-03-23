@@ -17,7 +17,7 @@ var app = new Vue({
   data: data,
   methods: {
     showText: function() {
-      var random = Math.random() * questions.lentgh;
+      var random = Math.random() * data.questions.lentgh;
       this.qText = this.questions[random];
     }
   }
