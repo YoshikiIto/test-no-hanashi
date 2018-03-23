@@ -12,25 +12,59 @@
 <meta name="description" content="テストの話題を提供するサイトです。">
 
 <base href="https://yoshikiito.github.io/test-no-hanashi/">
-<title>テストのはなし</title>
+<title>
+
+
+     Introduction 
+
+</title>
 <link rel="canonical" href="https://yoshikiito.github.io/test-no-hanashi/">
+
+
+
+
+
 
 <script
 src="https://code.jquery.com/jquery-3.2.1.min.js"
 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
-<script src="app-gen.js"></script>
+
+
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans">
-<link rel="stylesheet" href="css/light-style.css">
-<link rel="shortcut icon" href="img/fav.ico">
-<link href="https://yoshikiito.github.io/test-no-hanashi/index.xml" rel="alternate" type="application/rss+xml" title="Introduction" />
+
+
+
+    <link rel="stylesheet" href="css/light-style.css">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="img/fav.ico"
+
+>
+
+
+
+
+
+
+  <link href="https://yoshikiito.github.io/test-no-hanashi/index.xml" rel="alternate" type="application/rss+xml" title="Introduction" />
+
+
 </head>
 
 <body>
+
 <div id="top"> 
+
 <div class="hero is-fullheight">
+
+    
     <div class="hero-body">
         <div class="container has-text-centered">
             
@@ -40,6 +74,10 @@ crossorigin="anonymous"></script>
             <h3 class="subtitle is-3  fade-in two">
                 ときに気軽に、ときにじっくり。
             </h3>
+            
+            
+            
+            
         </div>
     </div> 
     
@@ -72,12 +110,10 @@ crossorigin="anonymous"></script>
     <div id="app">
         
         <div class="container has-text-centered">
-            <h2 class="title is-2">テストのはなしをする</h2>
-            <div class="qText">
-                    {{ qText }}
-            </div>
-            <button v-on:click="showText" class="button button-outline has-text-centered" type="button">次の話題へ</button>
+            <h2 class="title is-2">{{ qText }}</h2>
+            <button v-on:click="showText" class="button button-outline" type="button">テストのはなしをする</button>
         </div>
+        
     </div>
 </div>
 
@@ -122,6 +158,12 @@ crossorigin="anonymous"></script>
 
 
 </div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+<script src="app-gen.js"></script>
+
 
 <script>
 $('a[href^="#"]').click(function(e) {
