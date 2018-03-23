@@ -18,8 +18,10 @@ var app = new Vue({
   methods: {
     showText: function() {
       //var random = Math.floor(Math.random() * data.questions.lentgh) ;
-      this.qText = data.questions[Math.floor(Math.random() * data.questions.lentgh];
-      console.log('data.questions.length:' + data.questions.length);
+      var date = new Date();
+      var sec = date.getSeconds;
+      this.qText = data.questions[sec % data.questions.length];
+      console.log('sec % data.questions.length:' + sec % data.questions.length);
       //console.log('random:' + random);
     }
   }
