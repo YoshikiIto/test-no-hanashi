@@ -1,5 +1,6 @@
 var data = {
-  questions: ['今まで見つけたバグの中でいちばん危なかったものは？',
+  questions: ['テストって、どんなところが面白い？',
+  '今まで見つけたバグの中でいちばん危なかったものは？',
   'オススメのテスト本は？',
   'テストをはじめたきっかけは？',
   'ロールモデルはいる？',
@@ -17,12 +18,8 @@ var app = new Vue({
   data: data,
   methods: {
     showText: function() {
-      //var random = Math.floor(Math.random() * data.questions.lentgh) ;
-      var date = new Date();
-      var sec = date.getSeconds;
-      this.qText = data.questions[sec % data.questions.length];
-      console.log('sec % data.questions.length:' + sec % data.questions.length);
-      //console.log('random:' + random);
+      var random = Math.floor(Math.random() * 9) ;
+      this.qText = data.questions[random];
     }
   }
 });
