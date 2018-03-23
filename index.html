@@ -9,91 +9,37 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
-<meta name="description" content="Website description.">
+<meta name="description" content="テストの話題を提供するサイトです。">
 
 <base href="https://yoshikiito.github.io/test-no-hanashi/">
-<title>
-
-
-     Introduction 
-
-</title>
+<title>テストのはなし</title>
 <link rel="canonical" href="https://yoshikiito.github.io/test-no-hanashi/">
-
-
-
-
-
 
 <script
 src="https://code.jquery.com/jquery-3.2.1.min.js"
 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 crossorigin="anonymous"></script>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+<script src="app-gen.js"></script>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans">
-
-
-
-    <link rel="stylesheet" href="css/light-style.css">
-    
-
-
-
-
-<link rel="shortcut icon"
-
-    href="img/fav.ico"
-
->
-
-
-
-
-
-
-  <link href="https://yoshikiito.github.io/test-no-hanashi/index.xml" rel="alternate" type="application/rss+xml" title="Introduction" />
-
-
+<link rel="stylesheet" href="css/light-style.css">
+<link rel="shortcut icon" href="img/fav.ico">
+<link href="https://yoshikiito.github.io/test-no-hanashi/index.xml" rel="alternate" type="application/rss+xml" title="Introduction" />
 </head>
 
 <body>
-
 <div id="top"> 
-
 <div class="hero is-fullheight">
-
-    
     <div class="hero-body">
         <div class="container has-text-centered">
             
             <h1 class="bold-title fade-in one">
-                Introduction.
+                「テストのはなし」をしよう。もっと。
             </h1>
             <h3 class="subtitle is-3  fade-in two">
-                I&#39;m a theme for Hugo.
+                ときに気軽に、ときにじっくり。
             </h3>
-            
-            
-            <div class="fade-in three">
-                <div class="social-icons">
-    
-    <a href="https://twitter.com/">
-        <i class="fa fa-twitter"></i>
-    </a>
-    
-    <a href="https://facebook.com/">
-        <i class="fa fa-facebook"></i>
-    </a>
-    
-    <a href="https://linkedin.com/">
-        <i class="fa fa-linkedin"></i>
-    </a>
-    
-</div>
-            </div>
-            
         </div>
     </div> 
     
@@ -107,16 +53,11 @@ crossorigin="anonymous"></script>
 
 <div class="section" id="about">
     <div class="container">
-    <h2 class="title is-2 has-text-centered">About</h2>
+    <h2 class="title is-2 has-text-centered">"テストのはなし"とは</h2>
 
         <div class="columns">
-            
-            <div class="column is-one-third has-text-centered">
-              <img class="img-responsive avatar" src="https://yoshikiito.github.io/test-no-hanashi/img/profile.jpg" alt="My profile picture.">
-            </div>
-            
-            <div class="column markdown">
-                
+            <div class="column markdown has-text-centered">
+                作成中です。
             </div>
         </div>
     </div>
@@ -127,39 +68,38 @@ crossorigin="anonymous"></script>
 <div class="container"><hr></div>
 
 
+<div class="section" id="content">
+    <div id="app">
+        
+        <div class="container has-text-centered">
+            <h2 class="title is-2">テストのはなしをする</h2>
+            <div class="qText">
+                    {{ qText }}
+            </div>
+            <button v-on:click="showText" class="button button-outline has-text-centered" type="button">次の話題へ</button>
+        </div>
+    </div>
+</div>
 
-    
-
-
-
-    
+<div class="container"><hr></div>
 
 
 <div class="section" id="contact">
     <div class="container has-text-centered">
-    <h2 class="title is-2">Contact</h2>
+    <h2 class="title is-2">つくった人</h2>
         <div class="markdown">
             
         </div>
 
         
-
-        
-        <h3 class="subtitle is-3 has-text-centered top-pad"><a href="mailto:youremail@email.com">youremail@email.com</a></h3>
+        <div class="is-3 has-text-centered top-pad">email : <a href="mailto:yoshikiito.el@gmail.com">yoshikiito.el@gmail.com</a></div>
+        <div class="is-3 has-text-centered top-pad">blog : <a href="https://yoshikiito.net/blog/">ひびテク</a></div>
         
 
         <div class="social-icons">
     
-    <a href="https://twitter.com/">
-        <i class="fa fa-twitter"></i>
-    </a>
-    
-    <a href="https://facebook.com/">
-        <i class="fa fa-facebook"></i>
-    </a>
-    
-    <a href="https://linkedin.com/">
-        <i class="fa fa-linkedin"></i>
+    <a href="https://twitter.com/yoshikiito">
+        <i class="fa fa-twitter"></i> 
     </a>
     
 </div>
@@ -182,8 +122,6 @@ crossorigin="anonymous"></script>
 
 
 </div>
-
-
 
 <script>
 $('a[href^="#"]').click(function(e) {
