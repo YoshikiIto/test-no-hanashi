@@ -17,10 +17,10 @@ var app = new Vue({
   data: data,
   methods: {
     showText: function() {
-      var random = Math.floor(Math.random() * data.questions.lentgh) ;
-      this.qText = data.questions[random];
+      //var random = Math.floor(Math.random() * data.questions.lentgh) ;
+      this.qText = data.questions[Math.floor(Math.random() * data.questions.lentgh];
       console.log('data.questions.length:' + data.questions.length);
-      console.log('random:' + random);
+      //console.log('random:' + random);
     }
   }
 });
